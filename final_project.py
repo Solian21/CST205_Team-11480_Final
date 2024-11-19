@@ -1,6 +1,14 @@
 # Title; Final Project - CST205
 # Author: Carlos Solian, Aryll Pacheco, Bryson Ruck, & Sarah Wafa
 
+
+# Adding Them to Git
+# git add -A
+# Commit
+# git commit -m "Something Meaningful"
+# Push
+# git push -u origin maing
+
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 
