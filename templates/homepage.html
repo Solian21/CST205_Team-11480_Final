@@ -1,12 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<h1>HELLO WORLD</h1>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <style>
+        .inline-image {
+            display: inline-block;
+            text-align: center;
+            margin: center; /* Adjust spacing as needed */
+        }
+    </style>
+   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+	<!-- Bootstrap CSS -->
+        {{ bootstrap.load_css() }}
+
+        <title>Home Page</title>
+    </head>
+    <body>
+        <!-- Your page content -->
+	<div class="container">
+        <center>
+            <h1>THINK OF LATEER</h1>
+            <!-- Put group Photo here -->
+        <img src="/static/images/group.png" class="w-25 mb-5" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </center>
+      </div>
+      <div class="container">
+        <center>
+      <div class="inline-image">
+        <img class="rounded-circle w-25" alt="Aryll" src="/static/images/aryll.png" />
+        <p>Aryll Pacheco</p>
+   </div>
+   
+   <div class="inline-image">
+
+        <img class="rounded-circle w-25" alt="Carlos" src="/static/images/carlos.png" />
+        <p>Carlos Solian</p>
+    </div>
+    <div class="inline-image">
+
+        <img class="rounded-circle w-25" alt="Sarah" src="/static/images/sarah.png" />
+        <p>Sarah Wafa</p>
+</div>
+<div class="inline-image">
+
+        <img class="rounded-circle w-25" alt="Bryson" src="/static/images/bryson.png" />
+        <p>Bryson Ruck</p>
+   </div>
+</center>
+   </div>
+   
+    </div>
+
+    </body>
+
 </html>
