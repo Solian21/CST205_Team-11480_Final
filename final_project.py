@@ -24,15 +24,14 @@ def homepage():
 def AryllPage():
     return render_template('aryllhomepage.html')
 
+@app.route('/Aryll/Pottery')
+def pottery():
+    return render_template('aryllpottery.html')
+
 # Carlos's Home Page
 @app.route('/Carlos')
 def Carlos():
     return render_template('CarlosHomePage.html')
 
 
-
-@app.route('/Bryson')
-def Bryson():
-    return render_template('Bryson.html')
-
-  
+# Testing
