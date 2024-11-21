@@ -18,4 +18,8 @@ boostrp = Bootstrap5(app)
 @app.route('/')
 def homepage():
     return render_template('homepage.html')
-    
+
+# Carlos's Home Page
+@app.route('/carlos')
+def carlos():
+    return render_template('CarlosHomePage.html')
