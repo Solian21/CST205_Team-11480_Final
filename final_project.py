@@ -3,7 +3,7 @@
 
 
 # Adding Them to Git
-# git add -A
+# git add .
 # Commit
 # git commit -m "Something Meaningful"
 # Push
@@ -33,5 +33,7 @@ def pottery():
 def Carlos():
     return render_template('CarlosHomePage.html')
 
-
-# TESTING
+#Sarah's Home Page
+@app.route('/sarah')
+def Sarah():
+    return render_template('sarahhomepage.html')
