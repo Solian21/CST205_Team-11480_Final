@@ -33,6 +33,7 @@ def pottery():
 def Carlos():
     return render_template('CarlosHomePage.html')
 
+
 #Sarah's Home Page
 @app.route('/sarah')
 def Sarah():
