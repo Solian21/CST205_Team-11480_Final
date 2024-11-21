@@ -63,8 +63,14 @@
         <p>Sarah Wafa</p>
 </div>
 <div class="inline-image">
-        <img class="rounded-circle " alt="Bryson" src="/static/images/bryson.png" width="200px" height="auto"/>
-        <p>Bryson Ruck</p>
+    <div class="inline-image">
+        <a href="{{url_for('Bryson')}}">
+            <img class="rounded-circle" alt="Bryson" src="/static/images/bryson.png" width="200px" height="auto"/>
+        </a>
+        <div>
+        <a href="{{ url_for('Bryson') }}">Bryson Ruck</a>
+        </div>
+   </div>
    </div>
 </center>
    </div>
