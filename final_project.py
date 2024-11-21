@@ -18,3 +18,7 @@ boostrp = Bootstrap5(app)
 @app.route('/')
 def homepage():
     return render_template('homepage.html')
+
+@app.route('/Aryll')
+def AryllPage():
+    return render_template('aryllhomepage.html')
