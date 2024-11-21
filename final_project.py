@@ -26,7 +26,7 @@ def AryllPage():
 
 # Carlos's Home Page
 @app.route('/Carlos')
-def carlos():
+def Carlos():
     return render_template('CarlosHomePage.html')
 
   
