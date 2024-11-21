@@ -33,8 +33,13 @@ def pottery():
 def Carlos():
     return render_template('CarlosHomePage.html')
 
+@app.route('/Bryson')
+def Bryson():
+    return render_template('Bryson.html')
+
 
 #Sarah's Home Page
 @app.route('/sarah')
 def Sarah():
     return render_template('sarahhomepage.html')
+
