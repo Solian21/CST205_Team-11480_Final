@@ -33,5 +33,7 @@ def pottery():
 def Carlos():
     return render_template('CarlosHomePage.html')
 
+@app.route('/Bryson')
+def Bryson():
+    return render_template('Bryson.html')
 
-# Testing
