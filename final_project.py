@@ -24,7 +24,7 @@ def homepage():
 def AryllPage():
     return render_template('aryllhomepage.html')
 
-@app.route('/Aryll/Pottery')
+@app.route('/AryllPottery')
 def pottery():
     return render_template('aryllpottery.html')
 
