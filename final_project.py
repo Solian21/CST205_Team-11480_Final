@@ -28,6 +28,10 @@ def AryllPage():
 def pottery():
     return render_template('aryllpottery.html')
 
+@app.route("/AryllReading")
+def books():
+    return render_template('aryllbooks.html')
+
 # Carlos's Home Page
 @app.route('/Carlos')
 def Carlos():
