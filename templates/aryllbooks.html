@@ -3,16 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{ bootstap.load_css() }}
+    {{ bootstrap.load_css() }}
 </head>
 
 <body>
     <div class="container">
+        <center>
         <h1>Books</h1>
         <!--Books, favorite ones-->
-        <img src="static/images/aryll.png" class="w-25 mb-5"/>
+        <img src="static/images/aryllintree.jpg" class="w-25 mb-5"/>
         <p>Put words here about hobbies and such</p>
-        <p>Link to aryll home page</p>
+        <a href="{{ url_for('AryllPage')}}">Back to homepage</a>
+    </center>
     </div>
 </body>
 </html>
