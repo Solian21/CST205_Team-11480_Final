@@ -5,34 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{ bootstrap.load_css() }}
 </head>
-<body class= "container">
+<body>
+    
+    <div class= "container">
+        <center>
+            <h1> ~ More about Sarah ~</h1>
+        </center>
+        <center>
+            <img src="static/images/sarahHome.jpg" class="w-50 mb-3"/>
+        </center>
+    </div>
+
+    <div class = "container">
+        <center>
+            <p> I chose computer science as my major during my last semester of 
+                senior year. I had originally chosen another major but changed it last 
+                minute because I had come across a website that taught basic HTML and enjoyed it.
+                Even before that I was always interested when people in movies would "hack" banks
+                or important companies. It was a childish amusement that I had. When I applied to CSUMB I got an email 
+                about the CS++ Cohort. I was drawn to the fact that they guaranteed that they would give me the courses that 
+                was necessary for me to graduate with a Bachelors degree within 4 years. They also offered a certain amount in scholarships
+                which would help with the tuition. When I started I saw that a lot of the assignments helped us learn both coding skills as well 
+                as career and critical thinking skills. Over my 3 semesters in the cohort I thoroughly found it helpful since it gives us a community 
+                to work with as well as TA's who are a year or two above us that are able to help us when we come across questions that we need answered about
+                internships or about certain classes. </p>
+        </center>
+    </div>
+    <div class = "container">
+        <center>
+            <p> Besides coding I enjoy taking walks around my neighborhood or usually anywhere outside. Especially if I am with family. 
+                On my freetime I usually either read books or watch movies or tv shows. Currently I am watching Suits which is a pretty good 
+                TV show about a guy who was hired at a law firm without ever graduating from law school. I usually tend to stick to watching horror or 
+                thriller movies. I guess I enjoy it even though I don't necessarily really get scared when watching them. My tolerance for it is pretty high.
+             </p>
+        </center>
+    
+    </div>
+
+    <div class = "container">
+        <center>
+        <p>Learn more about a couple of my hobbies: </p>
+        <center></center>
+    </div>
     <center>
-        <h1> ~ More about Sarah ~</h1>
-    </center>
-    <center>
-        <img src="static/images/sarahHome.jpg" class="w-50 mb-3"/>
-    </center>
-</body>
-<body class = "container">
-    <center>
-        <p> I chose computer science as my major during my last semester of 
-            senior year. I had originally chosen another major but changed it last 
-            minute because I had come across a website that taught basic HTML and enjoyed it.
-            Even before that I was always interested when people in movies would "hack" banks
-            or important companies. It was a childish amusement that I had. When I applied to CSUMB I got an email 
-            about the CS++ Cohort. I was drawn to the fact that they guaranteed that they would give me the courses that 
-            was necessary for me to graduate with a Bachelors degree within 4 years. They also offered a certain amount in scholarships
-            which would help with the tuition. When I started I saw that a lot of the assignments helped us learn both coding skills as well 
-            as career and critical thinking skills. Over my 3 semesters in the cohort I thoroughly found it helpful since it gives us a community 
-            to work with as well as TA's who are a year or two above us that are able to help us when we come across questions that we need answered about
-            internships or about certain classes. </p>
-    </center>
-</body>
-<body class = "container">
-    <center>
-        <p> Besides coding I enjoy taking walks around my neighborhood or usually anywhere outside. Especially if I am with family. 
-            On my freetime I usually either read books or watch movies or tv shows. Currently I am watching Suits which is a pretty good 
-            TV show about a guy who was hired at a law firm without ever graduating from law school.  </p>
+    <div> <a href="{{ url_for('horror')}}">Horror</a> </div>  <div> <a href="{{ url_for('spdrmn')}}">SpiderMan</a> </div>
     </center>
 
+    <div> <a href="{{ url_for('homepage')}}">Go Back Home</a></div>
 </body>
+
+

@@ -47,3 +47,11 @@ def Bryson():
 def Sarah():
     return render_template('sarahhomepage.html')
 
+@app.route('/SarahHorror')
+def horror():
+    return render_template('sHorror.html')
+
+@app.route('/SarahSM')
+def spdrmn():
+    return render_template('sarahspiderman.html')
+
