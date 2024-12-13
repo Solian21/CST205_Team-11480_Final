@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-bs-theme="lightgreen">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    
+    <div class= "container">
+        <center>
+            <h1> ☠︎ Horror ☠︎ </h1>
+        </center>
+        <center>
+            <img src="static/images/scary.JPG" class="w-50 mb-3"/>
+        </center>
+    </div>
+
+    <div class = "container">
+        <center>
+            <p> Horror is my favorite genre. I enjoy seeing the jumpscares in 
+                the movies as well as seeing what humans find scary and what directors 
+                come up with when trying to find ideas that are meant to scare. I personally 
+                don't get scared of the movies at all. I have no nightmares or really any fears that are 
+                invoked by the movies. I have seen documentaries that are based on true cases and those also interest me because 
+                I like being aware of things that happen even if it is in the past and also the documentaries 
+                give good information about what happened in the case. Overall I enjoy horror in almost all forms of media   </p>
+        </center>
+    </div>
+    <div class = "container">
+        <center>
+            <p> Besides horror movies, I have watched a lot of Marvel movies as well. Spiderman is one of my favorites. 
+             </p>
+        </center>
+    
+    </div>
+
+    <center>
+    <div> <a href="{{ url_for('spdrmn')}}">Learn more about my fav marvel character</a> </div> 
+    </center>
+
+    <div> <a href="{{ url_for('Sarah')}}">Go Back Home</a></div>
+    <div> <a href="{{ url_for('homepage')}}">Go Back to Main</a></div>
+
+</body>
