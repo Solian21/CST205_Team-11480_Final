@@ -42,6 +42,21 @@ def books():
 def Carlos():
     return render_template('CarlosHomePage.html')
 
+# Carlos's Major Page
+@app.route('/Carlos/Major')
+def CarlosMajor():
+    return render_template('carlosMajor.html')
+
+# Carlos's Music Page
+@app.route('/Carlos/Music')
+def CarlosMusic():
+    return render_template('carlosMusic.html')
+
+# Carlos's Hobbies Page
+@app.route('/Carlos/Hobbies')
+def CarlosHobbies():
+    return render_template('carlosHobbies.html')
+
 @app.route('/Bryson')
 def Bryson():
     return render_template('Bryson.html')

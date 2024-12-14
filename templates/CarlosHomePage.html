@@ -1,5 +1,11 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
+    <style>
+        .inline-text h4 {
+            display: inline-block;
+            margin: 0 25px;
+        }
+    </style>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,8 +29,26 @@
             <center>
                 <p>_____________________________________________________________________</p>
                 <h2>About Me</h2>
-                <p>My name is Carlos Solian and I am a sophmore at CSUMB. I am apart of the CS++ program in cohort 10. </p>
+                <p>I am a second-year student at CSUMB and I work as a Resident Assistant (RA) to promote the values of 
+                    community engagement and diversity on the campus. Since I joined CS++ Cohort 10, I have been actively working on developing my computer 
+                    science skills and expanding my knowledge. Being a student and a leader at the same time, I strive for self-improvement, collaborate with 
+                    others, and make a difference within the community. </p>
+                    <p>_____________________________________________________________________</p>
+                    <h3>Want to know more?</h3>
             </center>
+            <div class="inline-text">
+                <center>
+                    <!--     <a href="{{url_for('Guitar')}}"><p style = 'font-size: 25px'>Guitar/Bass</p></a> -->
+                <a href="{{url_for('CarlosHobbies')}}"><h4><u>Hobbies</u></h4></a>
+                <a href="{{url_for('CarlosMajor')}}"><h4><u>Major</u></h4></a>
+                <a href="{{url_for('CarlosMusic')}}"><h4><u>Music</h4></u></a>
+            </center>
+            </div>
+            <center>
+                <br>
+                <a href="{{url_for('homepage')}}"><h5><u>Return To Homepage</u></h5></a>
+            </center>
+            
         </div>
 
       <!-- Optional JavaScript -->
