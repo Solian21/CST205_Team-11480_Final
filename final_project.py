@@ -20,6 +20,7 @@ boostrp = Bootstrap5(app)
 # API
 base_url = "https://api.open-meteo.com/v1/forecast"
 params = {
+    # Latitude and Longitude are set for seaside
 	"latitude": 36.6111,
 	"longitude": -121.8516,
 	"current": "temperature_2m",
@@ -31,12 +32,12 @@ params = {
 }
 # precipitation_unit=inch&timezone=America%2FLos_Angeles
 url = f'https://api.open-meteo.com/v1/forecast?latitude={params["latitude"]}&longitude={params["longitude"]}&current={params["current"]}&hourly={params["hourly"]}&temperature_unit={params["temperature_unit"]}&wind_speed_unit={params["wind_speed_unit"]}&precipitation_unit={params["precipitation_unit"]}&timezone={params["timezone"]}'
-print(url)
+weather = requests.get(url).json()
 @app.route('/')
 def homepage():
-    weather = get_weather()
-    # current_temp = weather['crrent_weather']['temperature']
-    return render_template('homepage.html')
+    current_temp = weather['current']['temperature_2m']
+    temp_unit = weather['current_units']['temperature_2m']
+    return render_template('homepage.html', current_temp=current_temp, temp_unit=temp_unit)
 
 # Aryll's Home Page
 @app.route('/Aryll')
