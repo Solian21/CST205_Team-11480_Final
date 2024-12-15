@@ -1,5 +1,11 @@
 <!doctype html>
 <html lang="en" data-bs-theme="lightgreen">
+    <style>
+        .inline {
+            text-align: center;
+            margin: center; /* Adjust spacing as needed */
+        }
+    </style>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +40,7 @@
     <div class = "container">
         <center>
             <p> Besides coding I enjoy taking walks around my neighborhood or usually anywhere outside. Especially if I am with family. 
-                On my freetime I usually either read books or watch movies or tv shows. Currently I am watching Suits which is a pretty good 
+                On my freetime I usually either read books or watch movies or tv shows. Currently I am watching <a href="https://www.imdb.com/title/tt1632701/">Suits</a> which is a pretty good 
                 TV show about a guy who was hired at a law firm without ever graduating from law school. I usually tend to stick to watching horror or 
                 thriller movies. I guess I enjoy it even though I don't necessarily really get scared when watching them. My tolerance for it is pretty high.
              </p>
@@ -43,13 +49,13 @@
     <div class = "container">
         <center>
         <p>Learn more about a couple of my hobbies: </p>
-        <center>
+        </center>
         
     <center>
-    <div> <a href="{{ url_for('horror')}}">Horror</a> </div>  <div> <a href="{{ url_for('spdrmn')}}">SpiderMan</a> </div>
+    <div class="inline"> <a href="{{ url_for('horror')}}">Horror</a></div> 
+        <div class = "inline"><a href="{{ url_for('spdrmn')}}">SpiderMan</a> </div>
     </center>
-
     <div> <a href="{{ url_for('homepage')}}">Go Back to Main</a></div>
 </body>
-</html>
+
 
