@@ -11,17 +11,31 @@
 
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
-#from API.py import API
+import requests
+
 
 
 app = Flask(__name__)
 boostrp = Bootstrap5(app)
-
-
-
-
+# API
+base_url = "https://api.open-meteo.com/v1/forecast"
+params = {
+	"latitude": 36.6111,
+	"longitude": -121.8516,
+	"current": "temperature_2m",
+	"hourly": "temperature_2m",
+	"temperature_unit": "fahrenheit",
+	"wind_speed_unit": "mph",
+	"precipitation_unit": "inch",
+	"timezone": "America/Los_Angeles"
+}
+# precipitation_unit=inch&timezone=America%2FLos_Angeles
+url = f'https://api.open-meteo.com/v1/forecast?latitude={params["latitude"]}&longitude={params["longitude"]}&current={params["current"]}&hourly={params["hourly"]}&temperature_unit={params["temperature_unit"]}&wind_speed_unit={params["wind_speed_unit"]}&precipitation_unit={params["precipitation_unit"]}&timezone={params["timezone"]}'
+print(url)
 @app.route('/')
 def homepage():
+    weather = get_weather()
+    # current_temp = weather['crrent_weather']['temperature']
     return render_template('homepage.html')
 
 # Aryll's Home Page
