@@ -103,3 +103,14 @@ def horror():
 def spdrmn():
     return render_template('sarahspiderman.html')
 
+@app.route('/SarahSMCup')
+def cup():
+    return render_template('cup.html')
+
+@app.route('/SarahSMPlush')
+def plushies():
+    return render_template('smplushies.html')
+
+@app.route('/SarahSMLego')
+def legos():
+    return render_template('smlego.html')
