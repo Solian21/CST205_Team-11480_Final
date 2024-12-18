@@ -2,6 +2,7 @@
 # Title: Final Project - CST205
 # Abstract: This project is our final for the CST205 class at CSUMB. Our group decided to make a presentaiton about us and who we are as a friend group as well as to try and inform our peers about the CS++ at CSUMB.
 # Author: Carlos Solian, Aryll Pacheco, Bryson Ruck, & Sarah Wafa
+#Github Link: https://github.com/Solian21/CST205_Team-11480_Final
 
 
 # Adding Them to Git
