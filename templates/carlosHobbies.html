@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+    <style>
+        .inline-image {
+            display: inline-block;
+            text-align: center;
+            margin: center;
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +14,22 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <center>
+        <h1>~ Hobbies ~</h1>
+        <div class="inline-image">
+            <img src="/static\images\FishingSib.jpg" width=350px height=auto>
+            <img src="/static/images/Fishing.jpg" width=350px height=auto>
+            <img src="/static/images/OceanFishing.jpg" width=350px height=auto>
+        </div>
+        <p>My brother started going on his own for fishing last summer, but later he was able to get my sister and me on board with the idea. How he managed to do that still baffles me considering how we were both not very interested in the idea. However, fishing soon became a favorite hobby of mine as well. Fishing slowly transformed into an entertaining family activity that allowed us to spend quality time together while appreciating the beauty of the wilderness and having some fun catching fish. Each instance of us going fishing was a different experience that helped us create lasting memories of our fishing trips. I got so into fishing that I brought my hobby back to school with me and got a fishing rod for the ocean. Of course, I’ve convinced myself that effort will pay off at some point and have been enjoying the ride while trying to catch something. The only problem is that I feel like I’ve not put in enough effort considering I haven’t caught anything, yet.</p>
+        <br>
+        <a href="{{url_for('Carlos')}}"><h5><u>Back</u></h5></a>
+        <a href="{{url_for('homepage')}}"><h5><u>Return To Homepage</u></h5></a>
+        
+        
+    </center>
+    </div>
     
 
     {{ bootstrap.load_js() }}

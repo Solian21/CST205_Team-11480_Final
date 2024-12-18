@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+    <style>
+        .inline-image {
+            display: inline-block;
+            text-align: center;
+            margin: center;
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +14,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <center>
+        <h1>~ Music ~</h1>
+        <div class="inline-image">
+            <img src="/static\images/Billie.PNG" width=350px height=500px>
+            <img src="/static/images/Paul.jpg" width=350px height=500px>
+            <img src="/static/images/theMarias.PNG" width=350px height=500px>
+            <img src="/static/images/SpotifyWrap.jpg" width=350px height=500px>
+        </div>
+        <br><br>
+        <p>Music is my passion, and I've been to just two concerts so far, but I plan to attend more in the coming years. The first show I saw was Paul McCartney's "Get Back" tour. I went with my sister, who was looking into The Beatles and their fans at that time. Not long ago, I caught a Billie Eilish concert. This was my first time going without family, which made it feel different. I also think about the typical listening hours for Spotify Wrapped, because I felt like my time was pretty high.    </p>
 
+        <br>
+
+        <a href="{{url_for('Carlos')}}"><h5><u>Back</u></h5></a>
+        <a href="{{url_for('homepage')}}"><h5><u>Return To Homepage</u></h5></a>
+    </center>
     {{ bootstrap.load_js() }}
 
 </body>
