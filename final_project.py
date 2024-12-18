@@ -77,15 +77,12 @@ def Bryson():
     return render_template('Bryson.html')
 @app.route('/Bryson/Guitar')
 def Guitar():
-    return render_template('gutiar.html')
+    return render_template('guitar.html')
 
 @app.route('/Bryson/Music')
 def Music():
     return render_template('Music.html')
 
-@app.route('/Bryson/Walking')
-def Walking():
-    return render_template('walking.html')
 @app.route('/Bryson/Electronics')
 def Electronics():
     return render_template('Electronics.html')
