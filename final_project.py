@@ -1,4 +1,6 @@
-# Title; Final Project - CST205
+# Course: CST205
+# Title: Final Project - CST205
+# Abstract: This project is our final for the CST205 class at CSUMB. Our group decided to make a presentaiton about us and who we are as a friend group as well as to try and inform our peers about the CS++ at CSUMB.
 # Author: Carlos Solian, Aryll Pacheco, Bryson Ruck, & Sarah Wafa
 
 
@@ -18,6 +20,7 @@ import requests
 app = Flask(__name__)
 boostrp = Bootstrap5(app)
 # API
+# This API is able to give the current weather given the latitude and longitude. It runs on 15 minutes intervals.
 base_url = "https://api.open-meteo.com/v1/forecast"
 params = {
     # Latitude and Longitude are set for seaside
@@ -33,6 +36,7 @@ params = {
 # precipitation_unit=inch&timezone=America%2FLos_Angeles
 url = f'https://api.open-meteo.com/v1/forecast?latitude={params["latitude"]}&longitude={params["longitude"]}&current={params["current"]}&hourly={params["hourly"]}&temperature_unit={params["temperature_unit"]}&wind_speed_unit={params["wind_speed_unit"]}&precipitation_unit={params["precipitation_unit"]}&timezone={params["timezone"]}'
 weather = requests.get(url).json()
+
 @app.route('/')
 def homepage():
     current_temp = weather['current']['temperature_2m']
